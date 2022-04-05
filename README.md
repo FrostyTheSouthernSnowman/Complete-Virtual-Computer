@@ -1,4 +1,5 @@
 # Build Your Own Virtual Computer from the Ground, Up
+## Work In Progress
 
 ## Build everything from transistors and boot loaders to operating systems in this virtual chip.
 
