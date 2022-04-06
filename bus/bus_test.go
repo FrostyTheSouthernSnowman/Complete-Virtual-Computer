@@ -5,11 +5,11 @@ import (
 	"testing"
 )
 
-var random_bus [64]bool
+var random_bus [16]bool
 
-var test_bus [64]bool
+var test_bus [16]bool
 
-func subscriber(current_bus [64]bool) {
+func subscriber(current_bus [16]bool) {
 	test_bus = current_bus
 }
 

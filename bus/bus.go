@@ -1,9 +1,9 @@
 package bus
 
-var bus [64]bool
-var connections []func([64]bool)
+var bus [16]bool
+var connections []func([16]bool)
 
-func subscribe_to_bus(on_change func([64]bool)) {
+func subscribe_to_bus(on_change func([16]bool)) {
 	connections = append(connections, on_change)
 }
 
@@ -13,7 +13,7 @@ func broadcast_bus() {
 	}
 }
 
-func load(data [64]bool) {
+func load(data [16]bool) {
 	bus = data
 	broadcast_bus()
 }
