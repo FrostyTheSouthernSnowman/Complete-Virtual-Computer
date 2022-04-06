@@ -18,9 +18,9 @@ func TestBus(t *testing.T) {
 		random_bus[i-1] = rand.Float32() < 0.5
 	}
 
-	subscribe_to_bus(subscriber)
-	load(random_bus)
-	if test_bus != random_bus || test_bus != bus || bus != random_bus {
-		t.Fatalf("Bus mismatch\ntest_bus: %v\nrandom_bus: %v\nmain bus: %v", test_bus, random_bus, bus)
+	Subscribe_to_bus(subscriber)
+	Load(random_bus)
+	if test_bus != random_bus || test_bus != main_bus || main_bus != random_bus {
+		t.Fatalf("Bus mismatch\ntest_bus: %v\nrandom_bus: %v\nmain_bus: %v", test_bus, random_bus, main_bus)
 	}
 }
