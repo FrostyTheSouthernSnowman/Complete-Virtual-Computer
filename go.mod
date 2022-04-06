@@ -1,3 +1,3 @@
-module github.com/FrostyTheSouthernSnowman/Complete-Virtual-Compute
+module Complete-Virtual-Computer
 
 go 1.17
